@@ -13,14 +13,17 @@ body {
                 url('https://cdn.pixabay.com/photo/2018/04/11/23/49/dumbbell-3313702_1280.jpg') center center/cover no-repeat;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .hero-content h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ff8c00;
     margin-bottom: 20px;
 }
@@ -32,19 +35,34 @@ body {
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .cta {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 10px 20px;
     background: #ff8c00;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta.secondary {
+    background: #ffffff;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
     transition: all 0.3s ease;
 }
 
@@ -53,18 +71,23 @@ body {
     transform: scale(1.1);
 }
 
+.cta.secondary:hover {
+    background: #ff8c00;
+    color: #ffffff;
+}
+
 /* Features Section */
 .features {
-    padding: 60px 20px;
+    padding: 40px 20px;
     background: #262626;
     text-align: center;
 }
 
 .features h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #ff8c00;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .feature-box {
@@ -76,6 +99,7 @@ body {
 
 .feature {
     flex: 1 1 300px;
+    max-width: 100%;
     background: #333333;
     padding: 20px;
     border-radius: 10px;
@@ -84,7 +108,7 @@ body {
 }
 
 .feature h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
     color: #ffffff;
 }
@@ -103,7 +127,7 @@ body {
 
 .cta-section h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -116,6 +140,7 @@ footer {
     color: #666666;
     font-size: 0.9rem;
 }
+
 /* Estilo para a logo */
 .logo-container {
     display: flex;
@@ -129,22 +154,46 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-/* Estilo para os botões */
-.cta-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
+
+/* Ajustes de Responsividade */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .feature-box {
+        flex-direction: column;
+    }
+
+    .feature {
+        text-align: center;
+    }
 }
 
-.cta.secondary {
-    background: #ffffff;
-    color: #ff8c00;
-    border: 2px solid #ff8c00;
-    transition: all 0.3s ease;
-}
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 
-.cta.secondary:hover {
-    background: #ff8c00;
-    color: #ffffff;
+    .cta {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .features h2 {
+        font-size: 1.8rem;
+    }
 }

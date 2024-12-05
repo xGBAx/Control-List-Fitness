@@ -72,7 +72,7 @@ form input:focus {
     box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
 }
 
-/* Responsividade para tabelas */
+/* Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -81,18 +81,14 @@ table {
     color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
-    display: block; /* Importante para rolagem */
-    overflow-x: auto; /* Habilita rolagem horizontal */
-    white-space: nowrap; /* Evita quebra de conteúdo */
 }
 
-table th, 
+table th,
 table td {
     padding: 12px 15px;
     text-align: center;
     font-size: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    min-width: 100px; /* Define um tamanho mínimo para colunas */
 }
 
 table th {
@@ -100,29 +96,6 @@ table th {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-table tbody tr:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    table th, 
-    table td {
-        font-size: 14px; /* Reduz tamanho da fonte */
-    }
-
-    table {
-        font-size: 12px; /* Reduz tamanho geral da tabela */
-    }
-}
-
-/* Ajuste para botões */
-button.delete,
-button.edit {
-    font-size: 12px; /* Ajusta tamanho dos botões */
-    padding: 5px 8px; /* Reduz espaçamento */
 }
 
 table tbody tr:hover {
@@ -141,7 +114,7 @@ button.delete {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 10px;
     transition: all 0.3s ease;
 }
 
@@ -195,7 +168,7 @@ button.edit:hover {
         transform: translateY(0);
     }
 }/* Responsividade aprimorada */
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     body {
         padding: 10px;
     }
@@ -221,6 +194,7 @@ button.edit:hover {
         overflow-x: auto; /* Adiciona rolagem horizontal */
         white-space: nowrap; /* Evita quebra de texto */
         font-size: 14px; /* Reduz tamanho da fonte */
+        
     }
 
     table th,
@@ -272,6 +246,19 @@ button.edit:hover {
         float: left;
         color: #ff8c00;
     }
+
+    button.delete {
+        margin-left: 8px;
+    }
+
+    button.edit {
+        margin-left: 12px;
+    }
+
+    ´.form {
+        text-align: center;
+    }
+    
 }/* Responsividade do formulário de registro */
 @media (max-width: 768px) {
     form {
@@ -285,6 +272,14 @@ button.edit:hover {
     form button {
         width: 100%; /* Ocupa 100% da largura */
         margin: 0; /* Remove margens laterais */
+    }
+
+    button.delete {
+        margin-top: 10px;
+    }
+
+    button.edit {
+        font-size: 11px;
     }
 }
 
@@ -321,9 +316,4 @@ button.edit:hover {
         margin-right: 10px;
     }
     
-}
-.checkbox-group input[type="number"] {
-    margin-left: 10px;
-    max-width: 150px;
-    display: inline-block;
 }
