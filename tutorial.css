@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+h1 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#botao {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+/* Botão padrão */
+#botao button {
+    background-color: rgba(0, 0, 0, 0.85) !important; /* Preto por padrão */
+    color: white !important; /* Texto branco por padrão */
+    border: none !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estado hover (quando o mouse está sobre o botão) */
+#botao button:hover {
+    background-color: #333 !important; /* Cinza claro */
+}
+
+/* Botão ativo (com classe personalizada) */
+#botao button.ativo {
+    background-color: #ff8c00 !important; /* Laranja permanente */
+    color: rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Estado focus (quando o botão está focado após o clique) */
+#botao button:focus {
+    background-color: #ff8c00 !important; /* Laranja ao permanecer focado */
+    color: rgba(0, 0, 0, 0.85) !important;
+    outline: none !important; /* Remove o contorno padrão */
+}

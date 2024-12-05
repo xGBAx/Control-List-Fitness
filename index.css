@@ -1,0 +1,150 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: #1c1c1c;
+}
+
+/* Header Hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://cdn.pixabay.com/photo/2018/04/11/23/49/dumbbell-3313702_1280.jpg') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff8c00;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff8c00;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background: #e67600;
+    transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background: #262626;
+    text-align: center;
+}
+
+.features h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #ff8c00;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1 1 300px;
+    background: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.feature p {
+    color: #bbbbbb;
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: #1c1c1c;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f0f0f;
+    color: #666666;
+    font-size: 0.9rem;
+}
+/* Estilo para a logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilo para os botões */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cta.secondary {
+    background: #ffffff;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
+    transition: all 0.3s ease;
+}
+
+.cta.secondary:hover {
+    background: #ff8c00;
+    color: #ffffff;
+}
